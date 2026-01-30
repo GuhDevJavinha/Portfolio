@@ -33,7 +33,7 @@ export default function Home() {
     },
     {
       className: "github",
-      href: "https://github.com/Guhfrontend",
+      href: "https://github.com/GuhDevJavinha",
       icon: "fa-brands fa-github",
       target: "_blank",
       glowColor: "#000000"
