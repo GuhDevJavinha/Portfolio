@@ -1,34 +1,31 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './Header.css';
 
 export default function Header() {
-    // Array com os dados dos links de navegação
+    const location = useLocation();
+
     const navLinks = [
         {
-            className: 'link',
             to: '/',
             label: 'Inicio'
         },
         {
-            className: 'link',
             to: '/about',
             label: 'Sobre'
         },
         {
-            className: 'link',
             to: '/curriculum',
             label: 'Curriculo'
         },
         {
-            className: 'link',
-            to: '/project',
+            to: '/projects',
             label: 'Projetos'
         }
     ];
 
     return (
-        <div className='m-5'>
+        <div className='header-shell'>
             <motion.header 
                 className="header"
                 initial={{ y: -100, opacity: 0 }}
@@ -43,7 +40,7 @@ export default function Header() {
                 >
                     <ul className="lista-links">
                         {navLinks.map((link, index) => (
-                            <motion.div
+                            <motion.li
                                 key={index}
                                 initial={{ opacity: 0, y: -20 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -62,13 +59,13 @@ export default function Header() {
                                     whileTap={{ scale: 0.95 }}
                                 >
                                     <Link 
-                                        className={link.className}
+                                        className={`link ${location.pathname === link.to ? 'active' : ''}`}
                                         to={link.to}
                                     >
                                         {link.label}
                                     </Link>
                                 </motion.div>
-                            </motion.div>
+                            </motion.li>
                         ))}
                     </ul>
                 </motion.nav>

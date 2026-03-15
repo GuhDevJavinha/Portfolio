@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Home from "./page/Home/Home";
 import About from "./page/About/About";
 import Curriculo from "./page/Curriculo/Curriculo";
+import Projects from "./page/Projects/Projects";
 
 const PageTransition = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -44,6 +45,14 @@ const AnimatedRoutes = () => {
           element={
             <PageTransition>
               <Curriculo />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/projects"
+          element={
+            <PageTransition>
+              <Projects />
             </PageTransition>
           }
         />
