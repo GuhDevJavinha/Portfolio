@@ -118,7 +118,7 @@ export default function Projects() {
               </div>
 
               <span className="project-link-label">
-                {project.link ? 'Abrir projeto' : 'Adicionar link do projeto'}
+                {project.link ? 'Abrir projeto' : 'Projeto em Desenvolvimento'}
               </span>
             </motion.a>
           ))}
