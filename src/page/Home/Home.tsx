@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import type { CSSProperties } from 'react';
+import { Link } from 'react-router-dom';
 import curriculumPdf from '../../assets/GUSTAVO-RIBEIRO-CV.pdf';
 import './Home.css';
 
@@ -117,8 +118,8 @@ export default function Home() {
           <a className="cta-primary" href={curriculumPdf} download="GUSTAVO-RIBEIRO-CV.pdf">
             Baixar curriculo
           </a>
-          <a className="cta-primary" href="/curriculum">Ver experiencia</a>
-          <a className="cta-outline" href="/about">Resumo profissional</a>
+          <Link className="cta-primary" to="/curriculum">Ver experiencia</Link>
+          <Link className="cta-outline" to="/about">Resumo profissional</Link>
         </motion.div>
 
         <div className="contact-panel">
