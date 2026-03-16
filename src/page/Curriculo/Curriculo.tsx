@@ -6,12 +6,12 @@ const jobs = [
         name: "Vitalis Invest",
         role: "Engenheiro de Software Junior",
         year: "2025 - Presente",
-        description: "Desenvolvimento de aplicacoes web com TypeScript, Vue.js, Java, Kotlin e Python em fluxo agil.",
-        secondDescriptionWork: "Implementacao de APIs REST, integracoes SQL/NoSQL e evolucao de servicos orientados a escalabilidade.",
+        description: "Desenvolvimento de aplicacoes web com TypeScript, Vue.js, Java, Nest.js e Python em fluxo agil.",
+        secondDescriptionWork: "Implementacao de APIs REST, integracoes SQL/NoSQL com Redis, suporte a cenarios de Multi-tenancy e evolucao de servicos orientados a escalabilidade.",
         achievements: [
             'Atuacao direta no ciclo completo: analise, desenvolvimento, testes e entrega.',
-            'Apoio em pipelines de CI/CD para reduzir friccao de deploy.',
-            'Participacao em decisoes de arquitetura e padronizacao tecnica.'
+            'Apoio em pipelines de CI/CD com GitHub Actions, conteinerizacao com Docker e deploy em ambientes Linux/Kubernetes.',
+            'Participacao em decisoes de arquitetura, padronizacao tecnica e observabilidade com Grafana.'
         ]
     },
     {

@@ -9,7 +9,7 @@ export default function Home() {
     'Java + Spring',
     'TypeScript + React.js/Nest.js',
     'Arquitetura de Microsservicos',
-    'Cloud AWS/GCP',
+    'Cloud AWS+GCP',
     'SQL e NoSQL',
     'CI/CD e Qualidade'
   ];
